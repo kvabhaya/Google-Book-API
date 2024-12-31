@@ -3,7 +3,7 @@ import '../BookCard.css';
 
 const BookCard = ({ book }) => {
     const { title, authors, description, imageLinks } = book.volumeInfo;
-    const thumbnail = imageLinks ? imageLinks.thumbnail : '/assets/images/default-book-cover.jpg';
+    const thumbnail = imageLinks ? imageLinks.thumbnail : '/assets/images/product-not-found.png';
 
     return (
         <div className="book-card">
